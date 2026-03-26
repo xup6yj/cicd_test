@@ -11,7 +11,7 @@ RUN apt update
 # install requirements and torch
 COPY ./code/requirements.txt /app/requirements.txt
 # RUN pip install --upgrade pip setuptools wheel
-RUN pip install -r /app/requirements.txt
+# RUN pip install -r /app/requirements.txt
 # RUN pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 
 # 設定工作目錄
