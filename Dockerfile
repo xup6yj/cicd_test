@@ -19,7 +19,7 @@ WORKDIR /app
 
 
 # copy files from host to the container
-COPY ./code /app
+COPY ./ /app
 # COPY ./data /app/data
 
 # remember to point the input path to the data folder in the container
