@@ -20,12 +20,12 @@ WORKDIR /app
 
 # copy files from host to the container
 COPY ./code /app
-COPY ./data /app/data
+# COPY ./data /app/data
 
 # remember to point the input path to the data folder in the container
 ENV INPUT_PATH=/app/data
 ENV LOCAL_MODEL_PATH=/app/models
 
 # 執行程式
-# CMD ["python", "app.py"]
-CMD ["python", "main.py"]
+CMD ["python", "app.py"]
+# CMD ["python", "main.py"]
